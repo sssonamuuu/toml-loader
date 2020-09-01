@@ -15,11 +15,17 @@ function getConfigTypings (config, indent = 1, paths = '') {
 
 module.exports = function (source) {
   this.cacheable && this.cacheable();
+
   const config = toml.parse(source);
-  const callback = this.async();
-  fs.writeFile(`${this.resourcePath}.d.ts`, `interface TomlExport ${getConfigTypings(config)}
-export const tomlExport: TomlExport;
-export default tomlExport;`, err => {
-    callback(err, `export default ${JSON.stringify(config)}`);
-  });
+
+  const result = `export default ${JSON.stringify(config)}`;
+
+  if (this.query.typescript) {
+    const callback = this.async();
+    fs.writeFile(`${this.resourcePath}.d.ts`, `interface TomlExport ${getConfigTypings(config)}${os.EOL}${os.EOL}export const tomlExport: TomlExport;${os.EOL}export default tomlExport;`, err => {
+      callback(err, result);
+    });
+  } else {
+    return result;
+  }
 };
