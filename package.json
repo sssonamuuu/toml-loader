@@ -1,6 +1,6 @@
 {
   "name": "@front-end-club/toml-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "能够生成 typescript 类型声明的 toml-loader",
   "main": "index.js",
   "repository": {
@@ -13,6 +13,7 @@
     "loader",
     "json",
     "parser",
+    "ts",
     "typescript",
     "webpack",
     "webpack-loader",
