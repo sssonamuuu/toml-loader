@@ -1,13 +1,24 @@
 {
   "name": "@front-end-club/toml-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sssonamuuu/toml-loader.git"
   },
-  "keywords": [],
+  "keywords": [
+    "toml-loader",
+    "toml",
+    "loader",
+    "json",
+    "parser",
+    "typescript",
+    "webpack",
+    "webpack-loader",
+    "config",
+    "configuration"
+  ],
   "author": "sonamu.liao",
   "license": "ISC",
   "bugs": {
