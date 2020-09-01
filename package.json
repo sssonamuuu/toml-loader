@@ -1,0 +1,20 @@
+{
+  "name": "@front-end-club/toml-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sssonamuuu/toml-loader.git"
+  },
+  "keywords": [],
+  "author": "sonamu.liao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sssonamuuu/toml-loader/issues"
+  },
+  "homepage": "https://github.com/sssonamuuu/toml-loader#readme",
+  "devDependencies": {
+    "toml": "^3.0.0"
+  }
+}
